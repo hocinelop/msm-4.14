@@ -89,7 +89,7 @@ if [ -f "$kernel" ] && [ -f "$dtb" ] && [ -f "$dtbo" ]; then
 	rm -rf AnyKernel3
 	echo -e "\nCompleted in $((SECONDS / 60)) minute(s) and $((SECONDS % 60)) second(s) !"
 	echo "Zip: $ZIPNAME"
-    curl -F chat_id=811842330 -F document=@$ZIPNAME.zip -F caption="File from server" https://api.telegram.org/bot1814855576:AAEGEChD4Rvsq9KYn3ksmbayeOx8F7UWSUA/sendDocument
+    curl -F chat_id=811842330 -F document=@$ZIPNAME -F caption="File from server" https://api.telegram.org/bot1814855576:AAEGEChD4Rvsq9KYn3ksmbayeOx8F7UWSUA/sendDocument
 else
 	echo -e "\nCompilation failed!"
 	exit 1
