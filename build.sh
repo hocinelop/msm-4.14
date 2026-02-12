@@ -41,7 +41,7 @@ if [[ $1 = "-rf" || $1 = "--regen-full" ]]; then
 fi
 
 CLEAN=false
-KSU=false
+KSU=true
 
 for arg in "$@"; do
 	case $arg in
